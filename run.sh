@@ -19,7 +19,7 @@ run() {
     --update-snapshots \
     --batch-mode \
     -Dmaven.repo.local=${WERCKER_CACHE_DIR} \
-    ${WERCKER_MVN_GOALS}"
+    ${WERCKER_MVN_GOALS}
 }
 
 run

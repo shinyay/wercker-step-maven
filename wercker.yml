@@ -1,4 +1,6 @@
 box: wercker/default
 build:
   steps:
-    - shellcheck
+    - shellcheck:
+        files: run.sh
+        exclude: SC1009
