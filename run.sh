@@ -10,7 +10,7 @@ else
 fi
 
 ### Check if Maven Goal is configured
-if [[ -z $WERCKER_MVN_GOALS ]]; then
+if [[ -z $WERCKER_MAVEN_GOALS ]]; then
   error "Maven Goal is not configured"
 fi
 
@@ -19,7 +19,7 @@ run() {
     --update-snapshots \
     --batch-mode \
     -Dmaven.repo.local=${WERCKER_CACHE_DIR} \
-    ${WERCKER_MVN_GOALS}
+    ${WERCKER_MAVEN_GOALS}
 }
 
 run
