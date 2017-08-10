@@ -3,4 +3,4 @@ build:
   steps:
     - shellcheck:
         files: run.sh
-        exclude: SC1009
+        exclude: SC1009,SC2039,SC2086
