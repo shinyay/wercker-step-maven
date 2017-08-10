@@ -1,0 +1,10 @@
+name: maven
+version: 0.0.1
+description: Run Maven
+keywords:
+  - maven
+  - mvn
+properties:
+  goals:
+    type: string
+    required: true
