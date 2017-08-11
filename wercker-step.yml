@@ -1,5 +1,5 @@
 name: maven
-version: 0.0.3
+version: 0.0.4
 description: Run Maven
 keywords:
   - maven
@@ -8,3 +8,5 @@ properties:
   goals:
     type: string
     required: true
+  project_dir:
+    type: string

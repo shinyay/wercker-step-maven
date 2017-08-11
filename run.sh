@@ -15,6 +15,10 @@ if [[ -z $WERCKER_MAVEN_GOALS ]]; then
 fi
 
 run() {
+  if [[ -n $WERCKER_MAVEN_PROJECT_DIR ]]; then
+    cd $WERCKER_MAVEN_PROJECT_DIR
+    pwd
+  fi
   mvn \
     --update-snapshots \
     --batch-mode \
